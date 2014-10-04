@@ -1,0 +1,952 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56CBB1D919CFEF1D00D22A7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CBB1D819CFEF1D00D22A7F /* Foundation.framework */; };
+		56CBB1E719CFEF1E00D22A7F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CBB1E619CFEF1E00D22A7F /* XCTest.framework */; };
+		56CBB1E819CFEF1E00D22A7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CBB1D819CFEF1D00D22A7F /* Foundation.framework */; };
+		56CBB1EA19CFEF1E00D22A7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CBB1E919CFEF1E00D22A7F /* UIKit.framework */; };
+		56CBB1ED19CFEF1E00D22A7F /* libPdfReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CBB1D519CFEF1D00D22A7F /* libPdfReader.a */; };
+		56CBB1F319CFEF1E00D22A7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56CBB1F119CFEF1E00D22A7F /* InfoPlist.strings */; };
+		56CBB1F519CFEF1E00D22A7F /* PdfReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB1F419CFEF1E00D22A7F /* PdfReaderTests.m */; };
+		56CBB29E19CFF0CF00D22A7F /* DocumentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB20019CFF0CF00D22A7F /* DocumentsView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB29F19CFF0CF00D22A7F /* Page.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB20219CFF0CF00D22A7F /* Page.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2A019CFF0CF00D22A7F /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB20419CFF0CF00D22A7F /* PageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2A119CFF0CF00D22A7F /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB20619CFF0CF00D22A7F /* PageViewController.m */; };
+		56CBB2A219CFF0CF00D22A7F /* PDFPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB20919CFF0CF00D22A7F /* PDFPage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2A319CFF0CF00D22A7F /* PDFPageDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB20B19CFF0CF00D22A7F /* PDFPageDetailsView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2A419CFF0CF00D22A7F /* CellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB20E19CFF0CF00D22A7F /* CellObject.m */; };
+		56CBB2A519CFF0CF00D22A7F /* ReaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB21119CFF0CF00D22A7F /* ReaderAppDelegate.m */; };
+		56CBB2A619CFF0CF00D22A7F /* ReaderBookDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB21319CFF0CF00D22A7F /* ReaderBookDelegate.m */; };
+		56CBB2A719CFF0CF00D22A7F /* ReaderDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB21519CFF0CF00D22A7F /* ReaderDemoController.m */; };
+		56CBB2A819CFF0CF00D22A7F /* ContentsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB21719CFF0CF00D22A7F /* ContentsTableViewCell.m */; };
+		56CBB2A919CFF0CF00D22A7F /* ContentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB21A19CFF0CF00D22A7F /* ContentsViewController.m */; };
+		56CBB2AA19CFF0CF00D22A7F /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB23F19CFF0CF00D22A7F /* CGPDFDocument.m */; };
+		56CBB2AB19CFF0CF00D22A7F /* ReaderConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB24119CFF0CF00D22A7F /* ReaderConstants.m */; };
+		56CBB2AC19CFF0CF00D22A7F /* ReaderContentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB24319CFF0CF00D22A7F /* ReaderContentPage.m */; };
+		56CBB2AD19CFF0CF00D22A7F /* ReaderContentTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB24519CFF0CF00D22A7F /* ReaderContentTile.m */; };
+		56CBB2AE19CFF0CF00D22A7F /* ReaderContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB24719CFF0CF00D22A7F /* ReaderContentView.m */; };
+		56CBB2AF19CFF0CF00D22A7F /* ReaderDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB24919CFF0CF00D22A7F /* ReaderDocument.m */; };
+		56CBB2B019CFF0CF00D22A7F /* ReaderDocumentOutline.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB24B19CFF0CF00D22A7F /* ReaderDocumentOutline.m */; };
+		56CBB2B119CFF0CF00D22A7F /* ReaderMainPagebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB24D19CFF0CF00D22A7F /* ReaderMainPagebar.m */; };
+		56CBB2B219CFF0CF00D22A7F /* ReaderMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB24F19CFF0CF00D22A7F /* ReaderMainToolbar.m */; };
+		56CBB2B319CFF0CF00D22A7F /* ReaderThumbCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB25119CFF0CF00D22A7F /* ReaderThumbCache.m */; };
+		56CBB2B419CFF0CF00D22A7F /* ReaderThumbFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB25319CFF0CF00D22A7F /* ReaderThumbFetch.m */; };
+		56CBB2B519CFF0CF00D22A7F /* ReaderThumbQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB25519CFF0CF00D22A7F /* ReaderThumbQueue.m */; };
+		56CBB2B619CFF0CF00D22A7F /* ReaderThumbRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB25719CFF0CF00D22A7F /* ReaderThumbRender.m */; };
+		56CBB2B719CFF0CF00D22A7F /* ReaderThumbRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB25919CFF0CF00D22A7F /* ReaderThumbRequest.m */; };
+		56CBB2B819CFF0CF00D22A7F /* ReaderThumbsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB25B19CFF0CF00D22A7F /* ReaderThumbsView.m */; };
+		56CBB2B919CFF0CF00D22A7F /* ReaderThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB25D19CFF0CF00D22A7F /* ReaderThumbView.m */; };
+		56CBB2BA19CFF0CF00D22A7F /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB25F19CFF0CF00D22A7F /* ReaderViewController.m */; };
+		56CBB2BB19CFF0CF00D22A7F /* ThumbsMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB26219CFF0CF00D22A7F /* ThumbsMainToolbar.m */; };
+		56CBB2BC19CFF0CF00D22A7F /* ThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB26419CFF0CF00D22A7F /* ThumbsViewController.m */; };
+		56CBB2BD19CFF0CF00D22A7F /* UIXToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB26619CFF0CF00D22A7F /* UIXToolbarView.m */; };
+		56CBB2BE19CFF0CF00D22A7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB26819CFF0CF00D22A7F /* ViewController.m */; };
+		56CBB2BF19CFF0CF00D22A7F /* VoyeurNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB26A19CFF0CF00D22A7F /* VoyeurNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2C019CFF0CF00D22A7F /* CMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB26E19CFF0CF00D22A7F /* CMap.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2C119CFF0CF00D22A7F /* Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB27019CFF0CF00D22A7F /* Font.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2C219CFF0CF00D22A7F /* FontCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB27219CFF0CF00D22A7F /* FontCollection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2C319CFF0CF00D22A7F /* FontDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB27419CFF0CF00D22A7F /* FontDescriptor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2C419CFF0CF00D22A7F /* FontFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB27619CFF0CF00D22A7F /* FontFile.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2C519CFF0CF00D22A7F /* CIDFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB27A19CFF0CF00D22A7F /* CIDFont.m */; };
+		56CBB2C619CFF0CF00D22A7F /* CIDType0Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB27C19CFF0CF00D22A7F /* CIDType0Font.m */; };
+		56CBB2C719CFF0CF00D22A7F /* CIDType2Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB27E19CFF0CF00D22A7F /* CIDType2Font.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2C819CFF0CF00D22A7F /* CompositeFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB28019CFF0CF00D22A7F /* CompositeFont.m */; };
+		56CBB2C919CFF0CF00D22A7F /* Type0Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB28219CFF0CF00D22A7F /* Type0Font.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2CA19CFF0CF00D22A7F /* MMType1Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB28519CFF0CF00D22A7F /* MMType1Font.m */; };
+		56CBB2CB19CFF0CF00D22A7F /* SimpleFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB28719CFF0CF00D22A7F /* SimpleFont.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2CC19CFF0CF00D22A7F /* TrueTypeFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB28919CFF0CF00D22A7F /* TrueTypeFont.m */; };
+		56CBB2CD19CFF0CF00D22A7F /* Type1Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB28B19CFF0CF00D22A7F /* Type1Font.m */; };
+		56CBB2CE19CFF0CF00D22A7F /* Type3Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB28D19CFF0CF00D22A7F /* Type3Font.m */; };
+		56CBB2CF19CFF0CF00D22A7F /* RenderingState.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB29019CFF0CF00D22A7F /* RenderingState.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2D019CFF0CF00D22A7F /* RenderingStateStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB29219CFF0CF00D22A7F /* RenderingStateStack.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2D119CFF0CF00D22A7F /* pdfScannerCallbacks.mm in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB29419CFF0CF00D22A7F /* pdfScannerCallbacks.mm */; };
+		56CBB2D219CFF0CF00D22A7F /* Scanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB29619CFF0CF00D22A7F /* Scanner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2D319CFF0CF00D22A7F /* Selection.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB29919CFF0CF00D22A7F /* Selection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2D419CFF0CF00D22A7F /* StringDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CBB29C19CFF0CF00D22A7F /* StringDetector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		56CBB2D619CFF18300D22A7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CBB2D519CFF18300D22A7F /* CoreGraphics.framework */; };
+		56CBB2E519CFF67300D22A7F /* DocumentsView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56CBB1FF19CFF0CF00D22A7F /* DocumentsView.h */; };
+		56CBB2E619CFF67300D22A7F /* PageView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56CBB20319CFF0CF00D22A7F /* PageView.h */; };
+		56CBB2E719CFF67300D22A7F /* PageViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56CBB20519CFF0CF00D22A7F /* PageViewController.h */; };
+		56CBB2E819CFF67300D22A7F /* PDFPageDetailsView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56CBB20A19CFF0CF00D22A7F /* PDFPageDetailsView.h */; };
+		56CBB2E919CFF67300D22A7F /* ReaderAppDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56CBB21019CFF0CF00D22A7F /* ReaderAppDelegate.h */; };
+		56CBB2EA19CFF67300D22A7F /* ReaderBookDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56CBB21219CFF0CF00D22A7F /* ReaderBookDelegate.h */; };
+		56CBB2EB19CFF67300D22A7F /* ContentsTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56CBB21619CFF0CF00D22A7F /* ContentsTableViewCell.h */; };
+		56CBB2EC19CFF67300D22A7F /* ContentsViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56CBB21919CFF0CF00D22A7F /* ContentsViewController.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56CBB1EB19CFEF1E00D22A7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56CBB1CD19CFEF1D00D22A7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56CBB1D419CFEF1D00D22A7F;
+			remoteInfo = PdfReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		56CBB1D319CFEF1D00D22A7F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				56CBB2E519CFF67300D22A7F /* DocumentsView.h in CopyFiles */,
+				56CBB2E619CFF67300D22A7F /* PageView.h in CopyFiles */,
+				56CBB2E719CFF67300D22A7F /* PageViewController.h in CopyFiles */,
+				56CBB2E819CFF67300D22A7F /* PDFPageDetailsView.h in CopyFiles */,
+				56CBB2E919CFF67300D22A7F /* ReaderAppDelegate.h in CopyFiles */,
+				56CBB2EA19CFF67300D22A7F /* ReaderBookDelegate.h in CopyFiles */,
+				56CBB2EB19CFF67300D22A7F /* ContentsTableViewCell.h in CopyFiles */,
+				56CBB2EC19CFF67300D22A7F /* ContentsViewController.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		56CBB1D519CFEF1D00D22A7F /* libPdfReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPdfReader.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		56CBB1D819CFEF1D00D22A7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		56CBB1DC19CFEF1D00D22A7F /* PdfReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PdfReader-Prefix.pch"; sourceTree = "<group>"; };
+		56CBB1E519CFEF1E00D22A7F /* PdfReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PdfReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56CBB1E619CFEF1E00D22A7F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		56CBB1E919CFEF1E00D22A7F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		56CBB1F019CFEF1E00D22A7F /* PdfReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PdfReaderTests-Info.plist"; sourceTree = "<group>"; };
+		56CBB1F219CFEF1E00D22A7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		56CBB1F419CFEF1E00D22A7F /* PdfReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PdfReaderTests.m; sourceTree = "<group>"; };
+		56CBB1FF19CFF0CF00D22A7F /* DocumentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentsView.h; sourceTree = "<group>"; };
+		56CBB20019CFF0CF00D22A7F /* DocumentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentsView.m; sourceTree = "<group>"; };
+		56CBB20119CFF0CF00D22A7F /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page.h; sourceTree = "<group>"; };
+		56CBB20219CFF0CF00D22A7F /* Page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page.m; sourceTree = "<group>"; };
+		56CBB20319CFF0CF00D22A7F /* PageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageView.h; sourceTree = "<group>"; };
+		56CBB20419CFF0CF00D22A7F /* PageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageView.m; sourceTree = "<group>"; };
+		56CBB20519CFF0CF00D22A7F /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		56CBB20619CFF0CF00D22A7F /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		56CBB20719CFF0CF00D22A7F /* PageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageViewController.xib; sourceTree = "<group>"; };
+		56CBB20819CFF0CF00D22A7F /* PDFPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFPage.h; sourceTree = "<group>"; };
+		56CBB20919CFF0CF00D22A7F /* PDFPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFPage.m; sourceTree = "<group>"; };
+		56CBB20A19CFF0CF00D22A7F /* PDFPageDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFPageDetailsView.h; sourceTree = "<group>"; };
+		56CBB20B19CFF0CF00D22A7F /* PDFPageDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFPageDetailsView.m; sourceTree = "<group>"; };
+		56CBB20D19CFF0CF00D22A7F /* CellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellObject.h; sourceTree = "<group>"; };
+		56CBB20E19CFF0CF00D22A7F /* CellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellObject.m; sourceTree = "<group>"; };
+		56CBB21019CFF0CF00D22A7F /* ReaderAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderAppDelegate.h; sourceTree = "<group>"; };
+		56CBB21119CFF0CF00D22A7F /* ReaderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderAppDelegate.m; sourceTree = "<group>"; };
+		56CBB21219CFF0CF00D22A7F /* ReaderBookDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderBookDelegate.h; sourceTree = "<group>"; };
+		56CBB21319CFF0CF00D22A7F /* ReaderBookDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderBookDelegate.m; sourceTree = "<group>"; };
+		56CBB21419CFF0CF00D22A7F /* ReaderDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderDemoController.h; sourceTree = "<group>"; };
+		56CBB21519CFF0CF00D22A7F /* ReaderDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderDemoController.m; sourceTree = "<group>"; };
+		56CBB21619CFF0CF00D22A7F /* ContentsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentsTableViewCell.h; sourceTree = "<group>"; };
+		56CBB21719CFF0CF00D22A7F /* ContentsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentsTableViewCell.m; sourceTree = "<group>"; };
+		56CBB21819CFF0CF00D22A7F /* ContentsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentsTableViewCell.xib; sourceTree = "<group>"; };
+		56CBB21919CFF0CF00D22A7F /* ContentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentsViewController.h; sourceTree = "<group>"; };
+		56CBB21A19CFF0CF00D22A7F /* ContentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentsViewController.m; sourceTree = "<group>"; };
+		56CBB21B19CFF0CF00D22A7F /* ContentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentsViewController.xib; sourceTree = "<group>"; };
+		56CBB21D19CFF0CF00D22A7F /* AppIcon-057.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-057.png"; sourceTree = "<group>"; };
+		56CBB21E19CFF0CF00D22A7F /* AppIcon-072.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-072.png"; sourceTree = "<group>"; };
+		56CBB21F19CFF0CF00D22A7F /* AppIcon-076.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-076.png"; sourceTree = "<group>"; };
+		56CBB22019CFF0CF00D22A7F /* AppIcon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-114.png"; sourceTree = "<group>"; };
+		56CBB22119CFF0CF00D22A7F /* AppIcon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-120.png"; sourceTree = "<group>"; };
+		56CBB22219CFF0CF00D22A7F /* AppIcon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-144.png"; sourceTree = "<group>"; };
+		56CBB22319CFF0CF00D22A7F /* AppIcon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-152.png"; sourceTree = "<group>"; };
+		56CBB22419CFF0CF00D22A7F /* arrowDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrowDown@2x.png"; sourceTree = "<group>"; };
+		56CBB22519CFF0CF00D22A7F /* arrowRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrowRight@2x.png"; sourceTree = "<group>"; };
+		56CBB22619CFF0CF00D22A7F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		56CBB22719CFF0CF00D22A7F /* DownAccessory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownAccessory.png; sourceTree = "<group>"; };
+		56CBB22819CFF0CF00D22A7F /* DownAccessory@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DownAccessory@2x.png"; sourceTree = "<group>"; };
+		56CBB22919CFF0CF00D22A7F /* outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outline.png; sourceTree = "<group>"; };
+		56CBB22A19CFF0CF00D22A7F /* outline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "outline@2x.png"; sourceTree = "<group>"; };
+		56CBB22B19CFF0CF00D22A7F /* Reader-Button-H.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Button-H.png"; sourceTree = "<group>"; };
+		56CBB22C19CFF0CF00D22A7F /* Reader-Button-H@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Button-H@2x.png"; sourceTree = "<group>"; };
+		56CBB22D19CFF0CF00D22A7F /* Reader-Button-N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Button-N.png"; sourceTree = "<group>"; };
+		56CBB22E19CFF0CF00D22A7F /* Reader-Button-N@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Button-N@2x.png"; sourceTree = "<group>"; };
+		56CBB22F19CFF0CF00D22A7F /* Reader-Email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Email.png"; sourceTree = "<group>"; };
+		56CBB23019CFF0CF00D22A7F /* Reader-Email@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Email@2x.png"; sourceTree = "<group>"; };
+		56CBB23119CFF0CF00D22A7F /* Reader-Mark-N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Mark-N.png"; sourceTree = "<group>"; };
+		56CBB23219CFF0CF00D22A7F /* Reader-Mark-N@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Mark-N@2x.png"; sourceTree = "<group>"; };
+		56CBB23319CFF0CF00D22A7F /* Reader-Mark-Y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Mark-Y.png"; sourceTree = "<group>"; };
+		56CBB23419CFF0CF00D22A7F /* Reader-Mark-Y@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Mark-Y@2x.png"; sourceTree = "<group>"; };
+		56CBB23519CFF0CF00D22A7F /* Reader-Print.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Print.png"; sourceTree = "<group>"; };
+		56CBB23619CFF0CF00D22A7F /* Reader-Print@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Print@2x.png"; sourceTree = "<group>"; };
+		56CBB23719CFF0CF00D22A7F /* Reader-Thumbs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Thumbs.png"; sourceTree = "<group>"; };
+		56CBB23819CFF0CF00D22A7F /* Reader-Thumbs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Thumbs@2x.png"; sourceTree = "<group>"; };
+		56CBB23919CFF0CF00D22A7F /* searchButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchButton.png; sourceTree = "<group>"; };
+		56CBB23A19CFF0CF00D22A7F /* UpAccessory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpAccessory.png; sourceTree = "<group>"; };
+		56CBB23B19CFF0CF00D22A7F /* UpAccessory@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UpAccessory@2x.png"; sourceTree = "<group>"; };
+		56CBB23E19CFF0CF00D22A7F /* CGPDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPDFDocument.h; sourceTree = "<group>"; };
+		56CBB23F19CFF0CF00D22A7F /* CGPDFDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPDFDocument.m; sourceTree = "<group>"; };
+		56CBB24019CFF0CF00D22A7F /* ReaderConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderConstants.h; sourceTree = "<group>"; };
+		56CBB24119CFF0CF00D22A7F /* ReaderConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderConstants.m; sourceTree = "<group>"; };
+		56CBB24219CFF0CF00D22A7F /* ReaderContentPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderContentPage.h; sourceTree = "<group>"; };
+		56CBB24319CFF0CF00D22A7F /* ReaderContentPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderContentPage.m; sourceTree = "<group>"; };
+		56CBB24419CFF0CF00D22A7F /* ReaderContentTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderContentTile.h; sourceTree = "<group>"; };
+		56CBB24519CFF0CF00D22A7F /* ReaderContentTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderContentTile.m; sourceTree = "<group>"; };
+		56CBB24619CFF0CF00D22A7F /* ReaderContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderContentView.h; sourceTree = "<group>"; };
+		56CBB24719CFF0CF00D22A7F /* ReaderContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderContentView.m; sourceTree = "<group>"; };
+		56CBB24819CFF0CF00D22A7F /* ReaderDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderDocument.h; sourceTree = "<group>"; };
+		56CBB24919CFF0CF00D22A7F /* ReaderDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderDocument.m; sourceTree = "<group>"; };
+		56CBB24A19CFF0CF00D22A7F /* ReaderDocumentOutline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderDocumentOutline.h; sourceTree = "<group>"; };
+		56CBB24B19CFF0CF00D22A7F /* ReaderDocumentOutline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderDocumentOutline.m; sourceTree = "<group>"; };
+		56CBB24C19CFF0CF00D22A7F /* ReaderMainPagebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderMainPagebar.h; sourceTree = "<group>"; };
+		56CBB24D19CFF0CF00D22A7F /* ReaderMainPagebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderMainPagebar.m; sourceTree = "<group>"; };
+		56CBB24E19CFF0CF00D22A7F /* ReaderMainToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderMainToolbar.h; sourceTree = "<group>"; };
+		56CBB24F19CFF0CF00D22A7F /* ReaderMainToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderMainToolbar.m; sourceTree = "<group>"; };
+		56CBB25019CFF0CF00D22A7F /* ReaderThumbCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderThumbCache.h; sourceTree = "<group>"; };
+		56CBB25119CFF0CF00D22A7F /* ReaderThumbCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderThumbCache.m; sourceTree = "<group>"; };
+		56CBB25219CFF0CF00D22A7F /* ReaderThumbFetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderThumbFetch.h; sourceTree = "<group>"; };
+		56CBB25319CFF0CF00D22A7F /* ReaderThumbFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderThumbFetch.m; sourceTree = "<group>"; };
+		56CBB25419CFF0CF00D22A7F /* ReaderThumbQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderThumbQueue.h; sourceTree = "<group>"; };
+		56CBB25519CFF0CF00D22A7F /* ReaderThumbQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderThumbQueue.m; sourceTree = "<group>"; };
+		56CBB25619CFF0CF00D22A7F /* ReaderThumbRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderThumbRender.h; sourceTree = "<group>"; };
+		56CBB25719CFF0CF00D22A7F /* ReaderThumbRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderThumbRender.m; sourceTree = "<group>"; };
+		56CBB25819CFF0CF00D22A7F /* ReaderThumbRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderThumbRequest.h; sourceTree = "<group>"; };
+		56CBB25919CFF0CF00D22A7F /* ReaderThumbRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderThumbRequest.m; sourceTree = "<group>"; };
+		56CBB25A19CFF0CF00D22A7F /* ReaderThumbsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderThumbsView.h; sourceTree = "<group>"; };
+		56CBB25B19CFF0CF00D22A7F /* ReaderThumbsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderThumbsView.m; sourceTree = "<group>"; };
+		56CBB25C19CFF0CF00D22A7F /* ReaderThumbView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderThumbView.h; sourceTree = "<group>"; };
+		56CBB25D19CFF0CF00D22A7F /* ReaderThumbView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderThumbView.m; sourceTree = "<group>"; };
+		56CBB25E19CFF0CF00D22A7F /* ReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderViewController.h; sourceTree = "<group>"; };
+		56CBB25F19CFF0CF00D22A7F /* ReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderViewController.m; sourceTree = "<group>"; };
+		56CBB26019CFF0CF00D22A7F /* ReaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReaderViewController.xib; sourceTree = "<group>"; };
+		56CBB26119CFF0CF00D22A7F /* ThumbsMainToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbsMainToolbar.h; sourceTree = "<group>"; };
+		56CBB26219CFF0CF00D22A7F /* ThumbsMainToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbsMainToolbar.m; sourceTree = "<group>"; };
+		56CBB26319CFF0CF00D22A7F /* ThumbsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbsViewController.h; sourceTree = "<group>"; };
+		56CBB26419CFF0CF00D22A7F /* ThumbsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbsViewController.m; sourceTree = "<group>"; };
+		56CBB26519CFF0CF00D22A7F /* UIXToolbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIXToolbarView.h; sourceTree = "<group>"; };
+		56CBB26619CFF0CF00D22A7F /* UIXToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXToolbarView.m; sourceTree = "<group>"; };
+		56CBB26719CFF0CF00D22A7F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		56CBB26819CFF0CF00D22A7F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		56CBB26919CFF0CF00D22A7F /* VoyeurNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoyeurNode.h; sourceTree = "<group>"; };
+		56CBB26A19CFF0CF00D22A7F /* VoyeurNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoyeurNode.m; sourceTree = "<group>"; };
+		56CBB26D19CFF0CF00D22A7F /* CMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMap.h; sourceTree = "<group>"; };
+		56CBB26E19CFF0CF00D22A7F /* CMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMap.m; sourceTree = "<group>"; };
+		56CBB26F19CFF0CF00D22A7F /* Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Font.h; sourceTree = "<group>"; };
+		56CBB27019CFF0CF00D22A7F /* Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Font.m; sourceTree = "<group>"; };
+		56CBB27119CFF0CF00D22A7F /* FontCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontCollection.h; sourceTree = "<group>"; };
+		56CBB27219CFF0CF00D22A7F /* FontCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontCollection.m; sourceTree = "<group>"; };
+		56CBB27319CFF0CF00D22A7F /* FontDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontDescriptor.h; sourceTree = "<group>"; };
+		56CBB27419CFF0CF00D22A7F /* FontDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontDescriptor.m; sourceTree = "<group>"; };
+		56CBB27519CFF0CF00D22A7F /* FontFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontFile.h; sourceTree = "<group>"; };
+		56CBB27619CFF0CF00D22A7F /* FontFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontFile.m; sourceTree = "<group>"; };
+		56CBB27919CFF0CF00D22A7F /* CIDFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIDFont.h; sourceTree = "<group>"; };
+		56CBB27A19CFF0CF00D22A7F /* CIDFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIDFont.m; sourceTree = "<group>"; };
+		56CBB27B19CFF0CF00D22A7F /* CIDType0Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIDType0Font.h; sourceTree = "<group>"; };
+		56CBB27C19CFF0CF00D22A7F /* CIDType0Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIDType0Font.m; sourceTree = "<group>"; };
+		56CBB27D19CFF0CF00D22A7F /* CIDType2Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIDType2Font.h; sourceTree = "<group>"; };
+		56CBB27E19CFF0CF00D22A7F /* CIDType2Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIDType2Font.m; sourceTree = "<group>"; };
+		56CBB27F19CFF0CF00D22A7F /* CompositeFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositeFont.h; sourceTree = "<group>"; };
+		56CBB28019CFF0CF00D22A7F /* CompositeFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositeFont.m; sourceTree = "<group>"; };
+		56CBB28119CFF0CF00D22A7F /* Type0Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type0Font.h; sourceTree = "<group>"; };
+		56CBB28219CFF0CF00D22A7F /* Type0Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type0Font.m; sourceTree = "<group>"; };
+		56CBB28419CFF0CF00D22A7F /* MMType1Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMType1Font.h; sourceTree = "<group>"; };
+		56CBB28519CFF0CF00D22A7F /* MMType1Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMType1Font.m; sourceTree = "<group>"; };
+		56CBB28619CFF0CF00D22A7F /* SimpleFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleFont.h; sourceTree = "<group>"; };
+		56CBB28719CFF0CF00D22A7F /* SimpleFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleFont.m; sourceTree = "<group>"; };
+		56CBB28819CFF0CF00D22A7F /* TrueTypeFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrueTypeFont.h; sourceTree = "<group>"; };
+		56CBB28919CFF0CF00D22A7F /* TrueTypeFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrueTypeFont.m; sourceTree = "<group>"; };
+		56CBB28A19CFF0CF00D22A7F /* Type1Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type1Font.h; sourceTree = "<group>"; };
+		56CBB28B19CFF0CF00D22A7F /* Type1Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type1Font.m; sourceTree = "<group>"; };
+		56CBB28C19CFF0CF00D22A7F /* Type3Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Type3Font.h; sourceTree = "<group>"; };
+		56CBB28D19CFF0CF00D22A7F /* Type3Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Type3Font.m; sourceTree = "<group>"; };
+		56CBB28F19CFF0CF00D22A7F /* RenderingState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingState.h; sourceTree = "<group>"; };
+		56CBB29019CFF0CF00D22A7F /* RenderingState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderingState.m; sourceTree = "<group>"; };
+		56CBB29119CFF0CF00D22A7F /* RenderingStateStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingStateStack.h; sourceTree = "<group>"; };
+		56CBB29219CFF0CF00D22A7F /* RenderingStateStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenderingStateStack.m; sourceTree = "<group>"; };
+		56CBB29419CFF0CF00D22A7F /* pdfScannerCallbacks.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = pdfScannerCallbacks.mm; sourceTree = "<group>"; };
+		56CBB29519CFF0CF00D22A7F /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		56CBB29619CFF0CF00D22A7F /* Scanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scanner.m; sourceTree = "<group>"; };
+		56CBB29819CFF0CF00D22A7F /* Selection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Selection.h; sourceTree = "<group>"; };
+		56CBB29919CFF0CF00D22A7F /* Selection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Selection.m; sourceTree = "<group>"; };
+		56CBB29B19CFF0CF00D22A7F /* StringDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringDetector.h; sourceTree = "<group>"; };
+		56CBB29C19CFF0CF00D22A7F /* StringDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringDetector.m; sourceTree = "<group>"; };
+		56CBB29D19CFF0CF00D22A7F /* StringDetectorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringDetectorDelegate.h; sourceTree = "<group>"; };
+		56CBB2D519CFF18300D22A7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56CBB1D219CFEF1D00D22A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56CBB2D619CFF18300D22A7F /* CoreGraphics.framework in Frameworks */,
+				56CBB1D919CFEF1D00D22A7F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56CBB1E219CFEF1E00D22A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56CBB1E719CFEF1E00D22A7F /* XCTest.framework in Frameworks */,
+				56CBB1ED19CFEF1E00D22A7F /* libPdfReader.a in Frameworks */,
+				56CBB1EA19CFEF1E00D22A7F /* UIKit.framework in Frameworks */,
+				56CBB1E819CFEF1E00D22A7F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56CBB1CC19CFEF1D00D22A7F = {
+			isa = PBXGroup;
+			children = (
+				56CBB1DA19CFEF1D00D22A7F /* PdfReader */,
+				56CBB1EE19CFEF1E00D22A7F /* PdfReaderTests */,
+				56CBB1D719CFEF1D00D22A7F /* Frameworks */,
+				56CBB1D619CFEF1D00D22A7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56CBB1D619CFEF1D00D22A7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB1D519CFEF1D00D22A7F /* libPdfReader.a */,
+				56CBB1E519CFEF1E00D22A7F /* PdfReaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56CBB1D719CFEF1D00D22A7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB2D519CFF18300D22A7F /* CoreGraphics.framework */,
+				56CBB1D819CFEF1D00D22A7F /* Foundation.framework */,
+				56CBB1E619CFEF1E00D22A7F /* XCTest.framework */,
+				56CBB1E919CFEF1E00D22A7F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56CBB1DA19CFEF1D00D22A7F /* PdfReader */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB1FE19CFF0CE00D22A7F /* PageViewController */,
+				56CBB20C19CFF0CF00D22A7F /* PDF Reader */,
+				56CBB26B19CFF0CF00D22A7F /* PDFCore */,
+				56CBB1DB19CFEF1D00D22A7F /* Supporting Files */,
+			);
+			path = PdfReader;
+			sourceTree = "<group>";
+		};
+		56CBB1DB19CFEF1D00D22A7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB1DC19CFEF1D00D22A7F /* PdfReader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56CBB1EE19CFEF1E00D22A7F /* PdfReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB1F419CFEF1E00D22A7F /* PdfReaderTests.m */,
+				56CBB1EF19CFEF1E00D22A7F /* Supporting Files */,
+			);
+			path = PdfReaderTests;
+			sourceTree = "<group>";
+		};
+		56CBB1EF19CFEF1E00D22A7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB1F019CFEF1E00D22A7F /* PdfReaderTests-Info.plist */,
+				56CBB1F119CFEF1E00D22A7F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56CBB1FE19CFF0CE00D22A7F /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB1FF19CFF0CF00D22A7F /* DocumentsView.h */,
+				56CBB20019CFF0CF00D22A7F /* DocumentsView.m */,
+				56CBB20119CFF0CF00D22A7F /* Page.h */,
+				56CBB20219CFF0CF00D22A7F /* Page.m */,
+				56CBB20319CFF0CF00D22A7F /* PageView.h */,
+				56CBB20419CFF0CF00D22A7F /* PageView.m */,
+				56CBB20519CFF0CF00D22A7F /* PageViewController.h */,
+				56CBB20619CFF0CF00D22A7F /* PageViewController.m */,
+				56CBB20719CFF0CF00D22A7F /* PageViewController.xib */,
+				56CBB20819CFF0CF00D22A7F /* PDFPage.h */,
+				56CBB20919CFF0CF00D22A7F /* PDFPage.m */,
+				56CBB20A19CFF0CF00D22A7F /* PDFPageDetailsView.h */,
+				56CBB20B19CFF0CF00D22A7F /* PDFPageDetailsView.m */,
+			);
+			path = PageViewController;
+			sourceTree = "<group>";
+		};
+		56CBB20C19CFF0CF00D22A7F /* PDF Reader */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB20D19CFF0CF00D22A7F /* CellObject.h */,
+				56CBB20E19CFF0CF00D22A7F /* CellObject.m */,
+				56CBB20F19CFF0CF00D22A7F /* Classes */,
+				56CBB21619CFF0CF00D22A7F /* ContentsTableViewCell.h */,
+				56CBB21719CFF0CF00D22A7F /* ContentsTableViewCell.m */,
+				56CBB21819CFF0CF00D22A7F /* ContentsTableViewCell.xib */,
+				56CBB21919CFF0CF00D22A7F /* ContentsViewController.h */,
+				56CBB21A19CFF0CF00D22A7F /* ContentsViewController.m */,
+				56CBB21B19CFF0CF00D22A7F /* ContentsViewController.xib */,
+				56CBB21C19CFF0CF00D22A7F /* Graphics */,
+				56CBB23C19CFF0CF00D22A7F /* Resources */,
+				56CBB23D19CFF0CF00D22A7F /* Sources */,
+				56CBB26719CFF0CF00D22A7F /* ViewController.h */,
+				56CBB26819CFF0CF00D22A7F /* ViewController.m */,
+				56CBB26919CFF0CF00D22A7F /* VoyeurNode.h */,
+				56CBB26A19CFF0CF00D22A7F /* VoyeurNode.m */,
+			);
+			path = "PDF Reader";
+			sourceTree = "<group>";
+		};
+		56CBB20F19CFF0CF00D22A7F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB21019CFF0CF00D22A7F /* ReaderAppDelegate.h */,
+				56CBB21119CFF0CF00D22A7F /* ReaderAppDelegate.m */,
+				56CBB21219CFF0CF00D22A7F /* ReaderBookDelegate.h */,
+				56CBB21319CFF0CF00D22A7F /* ReaderBookDelegate.m */,
+				56CBB21419CFF0CF00D22A7F /* ReaderDemoController.h */,
+				56CBB21519CFF0CF00D22A7F /* ReaderDemoController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		56CBB21C19CFF0CF00D22A7F /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB21D19CFF0CF00D22A7F /* AppIcon-057.png */,
+				56CBB21E19CFF0CF00D22A7F /* AppIcon-072.png */,
+				56CBB21F19CFF0CF00D22A7F /* AppIcon-076.png */,
+				56CBB22019CFF0CF00D22A7F /* AppIcon-114.png */,
+				56CBB22119CFF0CF00D22A7F /* AppIcon-120.png */,
+				56CBB22219CFF0CF00D22A7F /* AppIcon-144.png */,
+				56CBB22319CFF0CF00D22A7F /* AppIcon-152.png */,
+				56CBB22419CFF0CF00D22A7F /* arrowDown@2x.png */,
+				56CBB22519CFF0CF00D22A7F /* arrowRight@2x.png */,
+				56CBB22619CFF0CF00D22A7F /* Default-568h@2x.png */,
+				56CBB22719CFF0CF00D22A7F /* DownAccessory.png */,
+				56CBB22819CFF0CF00D22A7F /* DownAccessory@2x.png */,
+				56CBB22919CFF0CF00D22A7F /* outline.png */,
+				56CBB22A19CFF0CF00D22A7F /* outline@2x.png */,
+				56CBB22B19CFF0CF00D22A7F /* Reader-Button-H.png */,
+				56CBB22C19CFF0CF00D22A7F /* Reader-Button-H@2x.png */,
+				56CBB22D19CFF0CF00D22A7F /* Reader-Button-N.png */,
+				56CBB22E19CFF0CF00D22A7F /* Reader-Button-N@2x.png */,
+				56CBB22F19CFF0CF00D22A7F /* Reader-Email.png */,
+				56CBB23019CFF0CF00D22A7F /* Reader-Email@2x.png */,
+				56CBB23119CFF0CF00D22A7F /* Reader-Mark-N.png */,
+				56CBB23219CFF0CF00D22A7F /* Reader-Mark-N@2x.png */,
+				56CBB23319CFF0CF00D22A7F /* Reader-Mark-Y.png */,
+				56CBB23419CFF0CF00D22A7F /* Reader-Mark-Y@2x.png */,
+				56CBB23519CFF0CF00D22A7F /* Reader-Print.png */,
+				56CBB23619CFF0CF00D22A7F /* Reader-Print@2x.png */,
+				56CBB23719CFF0CF00D22A7F /* Reader-Thumbs.png */,
+				56CBB23819CFF0CF00D22A7F /* Reader-Thumbs@2x.png */,
+				56CBB23919CFF0CF00D22A7F /* searchButton.png */,
+				56CBB23A19CFF0CF00D22A7F /* UpAccessory.png */,
+				56CBB23B19CFF0CF00D22A7F /* UpAccessory@2x.png */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		56CBB23C19CFF0CF00D22A7F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		56CBB23D19CFF0CF00D22A7F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB23E19CFF0CF00D22A7F /* CGPDFDocument.h */,
+				56CBB23F19CFF0CF00D22A7F /* CGPDFDocument.m */,
+				56CBB24019CFF0CF00D22A7F /* ReaderConstants.h */,
+				56CBB24119CFF0CF00D22A7F /* ReaderConstants.m */,
+				56CBB24219CFF0CF00D22A7F /* ReaderContentPage.h */,
+				56CBB24319CFF0CF00D22A7F /* ReaderContentPage.m */,
+				56CBB24419CFF0CF00D22A7F /* ReaderContentTile.h */,
+				56CBB24519CFF0CF00D22A7F /* ReaderContentTile.m */,
+				56CBB24619CFF0CF00D22A7F /* ReaderContentView.h */,
+				56CBB24719CFF0CF00D22A7F /* ReaderContentView.m */,
+				56CBB24819CFF0CF00D22A7F /* ReaderDocument.h */,
+				56CBB24919CFF0CF00D22A7F /* ReaderDocument.m */,
+				56CBB24A19CFF0CF00D22A7F /* ReaderDocumentOutline.h */,
+				56CBB24B19CFF0CF00D22A7F /* ReaderDocumentOutline.m */,
+				56CBB24C19CFF0CF00D22A7F /* ReaderMainPagebar.h */,
+				56CBB24D19CFF0CF00D22A7F /* ReaderMainPagebar.m */,
+				56CBB24E19CFF0CF00D22A7F /* ReaderMainToolbar.h */,
+				56CBB24F19CFF0CF00D22A7F /* ReaderMainToolbar.m */,
+				56CBB25019CFF0CF00D22A7F /* ReaderThumbCache.h */,
+				56CBB25119CFF0CF00D22A7F /* ReaderThumbCache.m */,
+				56CBB25219CFF0CF00D22A7F /* ReaderThumbFetch.h */,
+				56CBB25319CFF0CF00D22A7F /* ReaderThumbFetch.m */,
+				56CBB25419CFF0CF00D22A7F /* ReaderThumbQueue.h */,
+				56CBB25519CFF0CF00D22A7F /* ReaderThumbQueue.m */,
+				56CBB25619CFF0CF00D22A7F /* ReaderThumbRender.h */,
+				56CBB25719CFF0CF00D22A7F /* ReaderThumbRender.m */,
+				56CBB25819CFF0CF00D22A7F /* ReaderThumbRequest.h */,
+				56CBB25919CFF0CF00D22A7F /* ReaderThumbRequest.m */,
+				56CBB25A19CFF0CF00D22A7F /* ReaderThumbsView.h */,
+				56CBB25B19CFF0CF00D22A7F /* ReaderThumbsView.m */,
+				56CBB25C19CFF0CF00D22A7F /* ReaderThumbView.h */,
+				56CBB25D19CFF0CF00D22A7F /* ReaderThumbView.m */,
+				56CBB25E19CFF0CF00D22A7F /* ReaderViewController.h */,
+				56CBB25F19CFF0CF00D22A7F /* ReaderViewController.m */,
+				56CBB26019CFF0CF00D22A7F /* ReaderViewController.xib */,
+				56CBB26119CFF0CF00D22A7F /* ThumbsMainToolbar.h */,
+				56CBB26219CFF0CF00D22A7F /* ThumbsMainToolbar.m */,
+				56CBB26319CFF0CF00D22A7F /* ThumbsViewController.h */,
+				56CBB26419CFF0CF00D22A7F /* ThumbsViewController.m */,
+				56CBB26519CFF0CF00D22A7F /* UIXToolbarView.h */,
+				56CBB26619CFF0CF00D22A7F /* UIXToolbarView.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		56CBB26B19CFF0CF00D22A7F /* PDFCore */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB26C19CFF0CF00D22A7F /* Font */,
+				56CBB28E19CFF0CF00D22A7F /* RenderingState */,
+				56CBB29319CFF0CF00D22A7F /* Scanner */,
+				56CBB29719CFF0CF00D22A7F /* Selection */,
+				56CBB29A19CFF0CF00D22A7F /* StringDetector */,
+			);
+			path = PDFCore;
+			sourceTree = "<group>";
+		};
+		56CBB26C19CFF0CF00D22A7F /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB26D19CFF0CF00D22A7F /* CMap.h */,
+				56CBB26E19CFF0CF00D22A7F /* CMap.m */,
+				56CBB26F19CFF0CF00D22A7F /* Font.h */,
+				56CBB27019CFF0CF00D22A7F /* Font.m */,
+				56CBB27119CFF0CF00D22A7F /* FontCollection.h */,
+				56CBB27219CFF0CF00D22A7F /* FontCollection.m */,
+				56CBB27319CFF0CF00D22A7F /* FontDescriptor.h */,
+				56CBB27419CFF0CF00D22A7F /* FontDescriptor.m */,
+				56CBB27519CFF0CF00D22A7F /* FontFile.h */,
+				56CBB27619CFF0CF00D22A7F /* FontFile.m */,
+				56CBB27719CFF0CF00D22A7F /* Subtypes */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		56CBB27719CFF0CF00D22A7F /* Subtypes */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB27819CFF0CF00D22A7F /* CompositeFonts */,
+				56CBB28319CFF0CF00D22A7F /* SimpleFonts */,
+			);
+			path = Subtypes;
+			sourceTree = "<group>";
+		};
+		56CBB27819CFF0CF00D22A7F /* CompositeFonts */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB27919CFF0CF00D22A7F /* CIDFont.h */,
+				56CBB27A19CFF0CF00D22A7F /* CIDFont.m */,
+				56CBB27B19CFF0CF00D22A7F /* CIDType0Font.h */,
+				56CBB27C19CFF0CF00D22A7F /* CIDType0Font.m */,
+				56CBB27D19CFF0CF00D22A7F /* CIDType2Font.h */,
+				56CBB27E19CFF0CF00D22A7F /* CIDType2Font.m */,
+				56CBB27F19CFF0CF00D22A7F /* CompositeFont.h */,
+				56CBB28019CFF0CF00D22A7F /* CompositeFont.m */,
+				56CBB28119CFF0CF00D22A7F /* Type0Font.h */,
+				56CBB28219CFF0CF00D22A7F /* Type0Font.m */,
+			);
+			path = CompositeFonts;
+			sourceTree = "<group>";
+		};
+		56CBB28319CFF0CF00D22A7F /* SimpleFonts */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB28419CFF0CF00D22A7F /* MMType1Font.h */,
+				56CBB28519CFF0CF00D22A7F /* MMType1Font.m */,
+				56CBB28619CFF0CF00D22A7F /* SimpleFont.h */,
+				56CBB28719CFF0CF00D22A7F /* SimpleFont.m */,
+				56CBB28819CFF0CF00D22A7F /* TrueTypeFont.h */,
+				56CBB28919CFF0CF00D22A7F /* TrueTypeFont.m */,
+				56CBB28A19CFF0CF00D22A7F /* Type1Font.h */,
+				56CBB28B19CFF0CF00D22A7F /* Type1Font.m */,
+				56CBB28C19CFF0CF00D22A7F /* Type3Font.h */,
+				56CBB28D19CFF0CF00D22A7F /* Type3Font.m */,
+			);
+			path = SimpleFonts;
+			sourceTree = "<group>";
+		};
+		56CBB28E19CFF0CF00D22A7F /* RenderingState */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB28F19CFF0CF00D22A7F /* RenderingState.h */,
+				56CBB29019CFF0CF00D22A7F /* RenderingState.m */,
+				56CBB29119CFF0CF00D22A7F /* RenderingStateStack.h */,
+				56CBB29219CFF0CF00D22A7F /* RenderingStateStack.m */,
+			);
+			path = RenderingState;
+			sourceTree = "<group>";
+		};
+		56CBB29319CFF0CF00D22A7F /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB29419CFF0CF00D22A7F /* pdfScannerCallbacks.mm */,
+				56CBB29519CFF0CF00D22A7F /* Scanner.h */,
+				56CBB29619CFF0CF00D22A7F /* Scanner.m */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		56CBB29719CFF0CF00D22A7F /* Selection */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB29819CFF0CF00D22A7F /* Selection.h */,
+				56CBB29919CFF0CF00D22A7F /* Selection.m */,
+			);
+			path = Selection;
+			sourceTree = "<group>";
+		};
+		56CBB29A19CFF0CF00D22A7F /* StringDetector */ = {
+			isa = PBXGroup;
+			children = (
+				56CBB29B19CFF0CF00D22A7F /* StringDetector.h */,
+				56CBB29C19CFF0CF00D22A7F /* StringDetector.m */,
+				56CBB29D19CFF0CF00D22A7F /* StringDetectorDelegate.h */,
+			);
+			path = StringDetector;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56CBB1D419CFEF1D00D22A7F /* PdfReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56CBB1F819CFEF1E00D22A7F /* Build configuration list for PBXNativeTarget "PdfReader" */;
+			buildPhases = (
+				56CBB1D119CFEF1D00D22A7F /* Sources */,
+				56CBB1D219CFEF1D00D22A7F /* Frameworks */,
+				56CBB1D319CFEF1D00D22A7F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PdfReader;
+			productName = PdfReader;
+			productReference = 56CBB1D519CFEF1D00D22A7F /* libPdfReader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		56CBB1E419CFEF1E00D22A7F /* PdfReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56CBB1FB19CFEF1E00D22A7F /* Build configuration list for PBXNativeTarget "PdfReaderTests" */;
+			buildPhases = (
+				56CBB1E119CFEF1E00D22A7F /* Sources */,
+				56CBB1E219CFEF1E00D22A7F /* Frameworks */,
+				56CBB1E319CFEF1E00D22A7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56CBB1EC19CFEF1E00D22A7F /* PBXTargetDependency */,
+			);
+			name = PdfReaderTests;
+			productName = PdfReaderTests;
+			productReference = 56CBB1E519CFEF1E00D22A7F /* PdfReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56CBB1CD19CFEF1D00D22A7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+			};
+			buildConfigurationList = 56CBB1D019CFEF1D00D22A7F /* Build configuration list for PBXProject "PdfReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 56CBB1CC19CFEF1D00D22A7F;
+			productRefGroup = 56CBB1D619CFEF1D00D22A7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56CBB1D419CFEF1D00D22A7F /* PdfReader */,
+				56CBB1E419CFEF1E00D22A7F /* PdfReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56CBB1E319CFEF1E00D22A7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56CBB1F319CFEF1E00D22A7F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56CBB1D119CFEF1D00D22A7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56CBB2BE19CFF0CF00D22A7F /* ViewController.m in Sources */,
+				56CBB2B019CFF0CF00D22A7F /* ReaderDocumentOutline.m in Sources */,
+				56CBB2C019CFF0CF00D22A7F /* CMap.m in Sources */,
+				56CBB2BB19CFF0CF00D22A7F /* ThumbsMainToolbar.m in Sources */,
+				56CBB2CA19CFF0CF00D22A7F /* MMType1Font.m in Sources */,
+				56CBB2BD19CFF0CF00D22A7F /* UIXToolbarView.m in Sources */,
+				56CBB2D219CFF0CF00D22A7F /* Scanner.m in Sources */,
+				56CBB29F19CFF0CF00D22A7F /* Page.m in Sources */,
+				56CBB2BC19CFF0CF00D22A7F /* ThumbsViewController.m in Sources */,
+				56CBB2A219CFF0CF00D22A7F /* PDFPage.m in Sources */,
+				56CBB2B719CFF0CF00D22A7F /* ReaderThumbRequest.m in Sources */,
+				56CBB2A719CFF0CF00D22A7F /* ReaderDemoController.m in Sources */,
+				56CBB2BF19CFF0CF00D22A7F /* VoyeurNode.m in Sources */,
+				56CBB2B519CFF0CF00D22A7F /* ReaderThumbQueue.m in Sources */,
+				56CBB2C519CFF0CF00D22A7F /* CIDFont.m in Sources */,
+				56CBB2C419CFF0CF00D22A7F /* FontFile.m in Sources */,
+				56CBB2AA19CFF0CF00D22A7F /* CGPDFDocument.m in Sources */,
+				56CBB2A819CFF0CF00D22A7F /* ContentsTableViewCell.m in Sources */,
+				56CBB2C119CFF0CF00D22A7F /* Font.m in Sources */,
+				56CBB2B919CFF0CF00D22A7F /* ReaderThumbView.m in Sources */,
+				56CBB2BA19CFF0CF00D22A7F /* ReaderViewController.m in Sources */,
+				56CBB2A019CFF0CF00D22A7F /* PageView.m in Sources */,
+				56CBB2C719CFF0CF00D22A7F /* CIDType2Font.m in Sources */,
+				56CBB2C619CFF0CF00D22A7F /* CIDType0Font.m in Sources */,
+				56CBB2AD19CFF0CF00D22A7F /* ReaderContentTile.m in Sources */,
+				56CBB2D119CFF0CF00D22A7F /* pdfScannerCallbacks.mm in Sources */,
+				56CBB2A519CFF0CF00D22A7F /* ReaderAppDelegate.m in Sources */,
+				56CBB2C319CFF0CF00D22A7F /* FontDescriptor.m in Sources */,
+				56CBB2D419CFF0CF00D22A7F /* StringDetector.m in Sources */,
+				56CBB2A619CFF0CF00D22A7F /* ReaderBookDelegate.m in Sources */,
+				56CBB2C919CFF0CF00D22A7F /* Type0Font.m in Sources */,
+				56CBB2AE19CFF0CF00D22A7F /* ReaderContentView.m in Sources */,
+				56CBB2B119CFF0CF00D22A7F /* ReaderMainPagebar.m in Sources */,
+				56CBB2C819CFF0CF00D22A7F /* CompositeFont.m in Sources */,
+				56CBB2AC19CFF0CF00D22A7F /* ReaderContentPage.m in Sources */,
+				56CBB2B319CFF0CF00D22A7F /* ReaderThumbCache.m in Sources */,
+				56CBB2CF19CFF0CF00D22A7F /* RenderingState.m in Sources */,
+				56CBB2CE19CFF0CF00D22A7F /* Type3Font.m in Sources */,
+				56CBB2CC19CFF0CF00D22A7F /* TrueTypeFont.m in Sources */,
+				56CBB2D019CFF0CF00D22A7F /* RenderingStateStack.m in Sources */,
+				56CBB2AF19CFF0CF00D22A7F /* ReaderDocument.m in Sources */,
+				56CBB2A319CFF0CF00D22A7F /* PDFPageDetailsView.m in Sources */,
+				56CBB2CB19CFF0CF00D22A7F /* SimpleFont.m in Sources */,
+				56CBB2A919CFF0CF00D22A7F /* ContentsViewController.m in Sources */,
+				56CBB2B419CFF0CF00D22A7F /* ReaderThumbFetch.m in Sources */,
+				56CBB2A119CFF0CF00D22A7F /* PageViewController.m in Sources */,
+				56CBB2B819CFF0CF00D22A7F /* ReaderThumbsView.m in Sources */,
+				56CBB2B619CFF0CF00D22A7F /* ReaderThumbRender.m in Sources */,
+				56CBB2AB19CFF0CF00D22A7F /* ReaderConstants.m in Sources */,
+				56CBB2A419CFF0CF00D22A7F /* CellObject.m in Sources */,
+				56CBB2CD19CFF0CF00D22A7F /* Type1Font.m in Sources */,
+				56CBB29E19CFF0CF00D22A7F /* DocumentsView.m in Sources */,
+				56CBB2D319CFF0CF00D22A7F /* Selection.m in Sources */,
+				56CBB2C219CFF0CF00D22A7F /* FontCollection.m in Sources */,
+				56CBB2B219CFF0CF00D22A7F /* ReaderMainToolbar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56CBB1E119CFEF1E00D22A7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56CBB1F519CFEF1E00D22A7F /* PdfReaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56CBB1EC19CFEF1E00D22A7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56CBB1D419CFEF1D00D22A7F /* PdfReader */;
+			targetProxy = 56CBB1EB19CFEF1E00D22A7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56CBB1F119CFEF1E00D22A7F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56CBB1F219CFEF1E00D22A7F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56CBB1F619CFEF1E00D22A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		56CBB1F719CFEF1E00D22A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56CBB1F919CFEF1E00D22A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/PdfReader.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PdfReader/PdfReader-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		56CBB1FA19CFEF1E00D22A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/PdfReader.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PdfReader/PdfReader-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		56CBB1FC19CFEF1E00D22A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PdfReader/PdfReader-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PdfReaderTests/PdfReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		56CBB1FD19CFEF1E00D22A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PdfReader/PdfReader-Prefix.pch";
+				INFOPLIST_FILE = "PdfReaderTests/PdfReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56CBB1D019CFEF1D00D22A7F /* Build configuration list for PBXProject "PdfReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56CBB1F619CFEF1E00D22A7F /* Debug */,
+				56CBB1F719CFEF1E00D22A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56CBB1F819CFEF1E00D22A7F /* Build configuration list for PBXNativeTarget "PdfReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56CBB1F919CFEF1E00D22A7F /* Debug */,
+				56CBB1FA19CFEF1E00D22A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		56CBB1FB19CFEF1E00D22A7F /* Build configuration list for PBXNativeTarget "PdfReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56CBB1FC19CFEF1E00D22A7F /* Debug */,
+				56CBB1FD19CFEF1E00D22A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56CBB1CD19CFEF1D00D22A7F /* Project object */;
+}
